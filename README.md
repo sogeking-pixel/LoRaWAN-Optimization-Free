@@ -1,4 +1,4 @@
-# LoRaWAN Low Bandwidth Optimization
+# LoRaWAN Simulation with ADR++ and Event Optimization
 
 ## Overview
 
