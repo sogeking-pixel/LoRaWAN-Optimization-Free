@@ -1,0 +1,51 @@
+{
+    "SIMULATION_PARAMS": {
+        "AVG_SEND_TIME": 300.0,
+        "DATA_SIZE": 32,
+        "FULL_COLLISION_MODEL": 2,
+        "RND_SEED": 42
+    },
+    "EXPERIMENT_CONTROL": {
+        "SIMULATION_TIME": 100000.0,
+        "MAX_BS_RECEIVES": 8,
+        "GRAPHICS": true,
+        "OUTPUT_FILENAME": "results/row_data/simulation_results.dat"
+    },
+    "NODE_SCENARIOS": [
+        100,
+        200,
+        300,
+        400,
+        500,
+        600,
+        700,
+        800,
+        900,
+        1000,
+        1100,
+        1200,
+        1300,
+        1400,
+        1500,
+        1600,
+        1700,
+        1800,
+        1900,
+        2000,
+        2100,
+        2200,
+        2300,
+        2400,
+        2500,
+        2600,
+        2700,
+        2800,
+        2900,
+        3000
+    ],
+    "ADR_PLUS_PLUS": {
+        "ENABLED": true,
+        "EFFICIENCY_THRESHOLD": 0.9,
+        "ADR_CHECK_INTERVAL": 3600.0
+    }
+}
