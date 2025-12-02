@@ -1,4 +1,4 @@
-# LoRaWAN Simulation with ADR++ and Event Optimization
+# LoRaWAN Simulation with Congestion-Resilient ADR and Event Optimization
 
 ## Overview
 
@@ -25,7 +25,7 @@ This repository is based on the original [LoRaFREE simulator](https://github.com
 
 - **Python 3 Migration**: Complete refactoring from Python 2 to Python 3 for modern compatibility
 - **Event-Driven Simulation**: Added support for discrete event simulation capabilities
-- **ADR++ Support**: Implementation of the enhanced Adaptive Data Rate (ADR++) algorithm
+- **Congestion-Resilient ADR**: Implementation of the enhanced Congestion-Resilient ADR algorithm
 - **Code Refactoring**: Improved code structure, modularity, and maintainability
 
 ## Requirements

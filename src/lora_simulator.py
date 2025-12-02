@@ -49,7 +49,7 @@ def network_server_process(env: simpy.Environment, nodes: List['myNode'], config
     """
     simulates the Network Server responsible for calculating and enforcing ADR++ policy.
     """
-    adr_config = config['ADR_PLUS_PLUS']
+    adr_config = config['CR_ADR']
     adr_interval = adr_config['ADR_CHECK_INTERVAL']
     efficiency_threshold = adr_config['EFFICIENCY_THRESHOLD']
     
@@ -92,7 +92,7 @@ def run_simulation(config: dict, nr_nodes: int, is_modified: bool):
     # 1. parameter extraction
     sim_params = config['SIMULATION_PARAMS']
     exp_ctrl = config['EXPERIMENT_CONTROL']
-    adr_config = config['ADR_PLUS_PLUS']
+    adr_config = config['CR_ADR']
 
     full_collision = sim_params['FULL_COLLISION_MODEL']
     max_bs_receives = exp_ctrl['MAX_BS_RECEIVES']

@@ -73,7 +73,7 @@ def plot_metric(df, y_col, title, ylabel, filename, log_scale=False):
     mod = df[df['Type'] == 'MODIFIED']
     
     plt.plot(base['nodes'], base[y_col], 'o--', label='LoRaWAN Estándar (Base)')
-    plt.plot(mod['nodes'], mod[y_col], 's-', label='Adr++ y Eventos Optimizados')
+    plt.plot(mod['nodes'], mod[y_col], 's-', label='CR-ADR y Eventos Optimizados')
     
     plt.title(title)
     plt.xlabel('Densidad de Nodos')
@@ -95,7 +95,7 @@ def density_to_nodes_energy(df):
     df_mean = df.groupby(['nodes', 'Type']).mean(numeric_only=True).reset_index()
     plt.figure(figsize=(8, 5))
 
-    df_mean['Type'] = df_mean['Type'].replace({'BASE': 'LoRaWAN Estándar (Base)', 'MODIFIED': 'Adr++ y Eventos Optimizados'})
+    df_mean['Type'] = df_mean['Type'].replace({'BASE': 'LoRaWAN Estándar (Base)', 'MODIFIED': 'CR-ADR y Eventos Optimizados'})
     sns.lineplot(data=df_mean, x='nodes', y='Energy', hue='Type', style='Type', markers=True, dashes=False, linewidth=2)
     plt.title('Consumo Energético Total de la Red')
     plt.ylabel('Energía Total (J)')

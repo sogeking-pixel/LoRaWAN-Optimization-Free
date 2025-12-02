@@ -33,7 +33,7 @@
         1900,
         2000
     ],
-    "ADR_PLUS_PLUS": {
+    "CR_ADR": {
         "ENABLED": true,
         "EFFICIENCY_THRESHOLD": 0.9,
         "ADR_CHECK_INTERVAL": 3600.0

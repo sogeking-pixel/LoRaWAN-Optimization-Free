@@ -55,7 +55,7 @@ def run_automated_experiments():
         base_stats = calculate_stats(base_nodes, base_time, config)
         
         # 2. RUN MODIFIED SIMULATION
-        print(" -> Running Modified (ADR++ and Event-based)...")
+        print(" -> Running Modified (CR_ADR and Event-based)...")
         reset_global_counters()
         mod_nodes, mod_time = run_simulation(config, nr_nodes, is_modified=True)
         mod_stats = calculate_stats(mod_nodes, mod_time, config)
